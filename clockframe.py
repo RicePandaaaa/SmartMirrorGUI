@@ -16,14 +16,16 @@ def current_iso8601():
 
 class ClockFrame(tk.Frame):
     def __init__(self, master=None):
-        tk.Frame.__init__(self, master)
-        self.pack()
+        tk.Frame.__init__(self, master, height=224, width=320,
+                          highlightbackground="black", highlightthickness=2)
+        self.pack(fill="both", expand=1)
+        self.pack_propagate(0)
         self.displayElements()
 
     def displayElements(self):
         self.now = tk.StringVar()
         self.time = tk.Label(self, font=('Helvetica', 24))
-        self.time.pack(side="left")
+        self.time.pack(fill="both", expand=1)
         self.time["textvariable"] = self.now
 
         self.onUpdate()
