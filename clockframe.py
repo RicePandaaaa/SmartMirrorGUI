@@ -1,11 +1,17 @@
 import tkinter as tk
 import time
 
+"""
+This code is based on this Stack Overflow answer:
+https://stackoverflow.com/a/34022680
+
+Changes are made to fit the formatting that I want.
+"""
+
 
 def current_iso8601():
-    """Get current date and time in ISO8601"""
-    # https://en.wikipedia.org/wiki/ISO_8601
-    # https://xkcd.com/1179/
+    """Get current date and time"""
+
     return time.strftime("%B %d, %Y\n%H:%M:%S\n%A", time.localtime())
 
 class ClockFrame(tk.Frame):
