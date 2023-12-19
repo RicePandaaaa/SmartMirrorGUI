@@ -8,6 +8,7 @@ screen.title("PandaPi")
 
 # Create a clock
 current_time = clockframe.ClockFrame(master=screen)
+current_time.place(x=0, y=0)
 
 # Loop the screen
 screen.mainloop()
