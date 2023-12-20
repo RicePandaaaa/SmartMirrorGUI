@@ -1,6 +1,5 @@
 import tkinter as tk
-import clockframe, motivation_message, weatherframe
-
+import clockframe, motivation_message, weatherframe, scheduleframe
 
 # Set up the screen
 screen = tk.Tk()
@@ -18,6 +17,10 @@ message_frame.place(x=320, y=0)
 # Create the weather frame
 weather_frame = weatherframe.WeatherFrame(master=screen)
 weather_frame.place(x=0, y=224)
+
+# Create the schedule frame
+schedule_frame = scheduleframe.ScheduleFrame(master=screen)
+schedule_frame.place(x=320, y=96)
 
 # Loop the screen
 screen.mainloop()
