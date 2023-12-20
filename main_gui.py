@@ -1,6 +1,7 @@
 import tkinter as tk
 import clockframe, motivation_message, weatherframe
 
+
 # Set up the screen
 screen = tk.Tk()
 screen.geometry("800x480")
