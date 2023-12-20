@@ -16,7 +16,7 @@ def current_iso8601():
 
 class ClockFrame(tk.Frame):
     def __init__(self, master=None):
-        tk.Frame.__init__(self, master, height=224, width=320,
+        tk.Frame.__init__(self, master, height=160, width=320,
                           highlightbackground="black", highlightthickness=1)
         self.pack(fill="both", expand=1)
         self.pack_propagate(0)

@@ -3,7 +3,7 @@ import clockframe, motivation_message, weatherframe, scheduleframe
 
 # Set up the screen
 screen = tk.Tk()
-screen.geometry("800x480")
+screen.geometry("800x415")
 screen.title("PandaPi")
 
 # Create a clock frame
@@ -16,7 +16,7 @@ message_frame.place(x=320, y=0)
 
 # Create the weather frame
 weather_frame = weatherframe.WeatherFrame(master=screen)
-weather_frame.place(x=0, y=224)
+weather_frame.place(x=0, y=160)
 
 # Create the schedule frame
 schedule_frame = scheduleframe.ScheduleFrame(master=screen)

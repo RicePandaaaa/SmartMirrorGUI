@@ -6,7 +6,7 @@ import json
 class WeatherFrame(tk.Frame):
     def __init__(self, master=None):
         # Set up the frame
-        tk.Frame.__init__(self, master, height=256, width=320,
+        tk.Frame.__init__(self, master, height=255, width=320,
                           highlightbackground="black", highlightthickness=1)
         self.pack(fill="both", expand=1)
         self.pack_propagate(0)
@@ -31,8 +31,6 @@ class WeatherFrame(tk.Frame):
         self.message_label = tk.Label(self, font=('Helvetica', 16), wraplength=318)
         self.message_label.pack(fill="both", expand=1)
         self.message_label["textvariable"] = self.message
-
-        # Set the message to be displayed
 
     def updateWeatherInfo(self):
         """ Gets information from the AccuWeather API """

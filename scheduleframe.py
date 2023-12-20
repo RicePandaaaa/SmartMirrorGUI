@@ -5,7 +5,7 @@ import time
 class ScheduleFrame(tk.Frame):
     def __init__(self, master=None):
         # Set up the frame
-        tk.Frame.__init__(self, master, height=384, width=480,
+        tk.Frame.__init__(self, master, height=319, width=480,
                           highlightbackground="black", highlightthickness=1)
         self.pack(fill="both")
         self.pack_propagate(0)
@@ -28,12 +28,12 @@ class ScheduleFrame(tk.Frame):
 
         # Set up title label
         self.title_label = tk.Label(self, font=('Helvetica', 20), text="Schedule")
-        self.title_label.pack(fill="both")
+        self.title_label.pack(fill="x", pady=5)
 
         # Set up schedule label
         self.schedule_message = tk.StringVar(value="No classes today!")
         self.schedule_label = tk.Label(self, font=('Helvetica', 15), wraplength=372, justify=tk.LEFT)
-        self.schedule_label.pack(fill="both", expand=1)
+        self.schedule_label.pack(fill="x")
         self.schedule_label["textvariable"] = self.schedule_message
 
         # Prepare text for schedule
