@@ -16,7 +16,7 @@ Images and videos of the smart mirror and its testing can be found here: https:/
 
 ## PyQt5 Version
 
-This version serves as a visual improvement of the [Tkinter version](https://github.com/RicePandaaaa/SmartMirrorGUI/blob/main/README.md#tkinter-version). I consulted [@alexofthewu](https://github.com/alexofthewu) to help create the new UI, and that UI is implemented in this PyQt version.
+This version serves as a visual improvement of the [Tkinter version](https://github.com/RicePandaaaa/SmartMirrorGUI/tree/main?tab=readme-ov-file#tkinter-version). I consulted [@alexofthewu](https://github.com/alexofthewu) to help create the new UI, and that UI is implemented in this PyQt version.
 
 The code in `qt_main_gui.py` loads the UI stored in `mirror.ui` (which is generated in QT Designer). The code in the program uses PyQt6 but due to incompatabilities with the Raspberry Pi 4, the actual code uses PyQt5. This means that the only changes necessary is to adjust the module name in the `import` statements from "PyQt6" to "PyQt5". Furtherfore, the font sizes are also slightly adjusted (all font sizes reduced by 2, with the exception of the text for the rain chance, which is reduced by 10).
 
