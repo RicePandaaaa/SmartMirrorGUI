@@ -393,7 +393,7 @@ background-color: rgb(75, 75, 75);</string>
     <property name="font">
      <font>
       <family>Adobe Arabic</family>
-      <pointsize>36</pointsize>
+      <pointsize>26</pointsize>
       <bold>false</bold>
      </font>
     </property>
